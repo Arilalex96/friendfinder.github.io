@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friend Finder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./JS/Home.js"></script>
+    <script src="./JS/Logout.js"></script>
+  </head>
+
+  <body>
+    <header>
+            <h1>Friend Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./HTML/Profile.html">Profile</a></li>
+                    <li><a href="./HTML/Friend.html">Friend</a></li>
+                    <li><button class="button" id="logoutBtn" onclick="logout()">Logout</button></li>
+                </ul>
+            </nav>
+        </header>
+  
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="pict">
+            <img src="./Img/upload1.jpg">
+            <div class="profile-header">
+              <img src="./Img/profile1.jpg">
+              <div class="text">
+                <span class="profile-name">Nama 1</span>
+                <span class="date">Waktu Upload</span>
+              </div>
+              <div class="heart">&#10084;</div>
+              <div class="menu">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <span class="capt-header">Headline Caption</span>
+            <span class="capt-text">caption p text disini </span>
+            <div class="edit"><i class="fa fa-pencil" style="color: white;"></i></div>
+          </div>
+          <div class="pict">
+            <img src="./Img/upload2.jpeg">
+            <div class="profile-header">
+              <img src="./Img/profile2.jpeg">
+              <div class="text">
+                <span class="profile-name">Nama 2</span>
+                <span class="date">Waktu Upload</span>
+              </div>
+              <div class="heart">&#10084;</div>
+              <div class="menu">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <span class="capt-header">Headline Caption</span>
+            <span class="capt-text">caption p text disini </span>
+            <div class="edit"><i class="fa fa-pencil" style="color: white;"></i></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="pict">
+            <img src="./Img/upload3.jpeg">
+            <div class="profile-header">
+              <img src="./Img/profile3.jpeg">
+              <div class="text">
+                <span class="profile-name">Nama 3</span>
+                <span class="date">Waktu Upload</span>
+              </div>
+              <div class="heart">&#10084;</div>
+              <div class="menu">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <span class="capt-header">Headline Caption</span>
+            <span class="capt-text">caption p text disini </span>
+            <div class="edit"><i class="fa fa-pencil" style="color: white;"></i></div>
+          </div>
+          <div class="pict">
+            <img src="./Img/upload4.jpeg">
+            <div class="profile-header">
+              <img src="./Img/profile4.jpeg">
+              <div class="text">
+                <span class="profile-name">Nama 4</span>
+                <span class="date">Waktu Upload</span>
+              </div>
+              <div class="heart">&#10084;</div>
+              <div class="menu">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="caption">
+            <span class="capt-header">Headline Caption</span>
+            <span class="capt-text">caption p text disini </span>
+            <div class="edit"><i class="fa fa-pencil" style="color: white;"></i></div>
+          </div>
+        </div>
+        <div class="notif-menu">
+          <button onclick="location.href='./HTML/Message.html'" class="msg">
+            <i class="fa fa-envelope"></i>
+          </button>
+          <button class="add" onclick="create_post()">
+            <i class="fa fa-plus"></i>
+          </button>
+          <button class="notif">
+            <i class="fa fa-bell"></i>
+          </button>
+        </div>
+
+        <div class="modal" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Write Something to Post</h1>
+            <label for="upload_gambar" id="upload_label">Choose File</label>
+            <input type="file" class="file-input" id="upload_gambar" accept="image/*" onchange="showPreview(event)">
+            <img id="preview">
+
+            <label for="caption"></label>
+            <textarea name="caption"></textarea>
+
+            <div class="form-btn">
+              <button type="submit" class="submit_btn">Post</button>
+              <button type="button" class="cancel_btn" onclick="closeForm()">Cancel</button>
+          </div>
+            
+          </form>
+        </div>
+
+
+      </div>
+      <footer>
+        <b>Hak cipta &copy; 2023 Friend Finder.</b>
+      </footer>
+  </body>
+</html>
